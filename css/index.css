@@ -1,3 +1,251 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+#wrapper {
+  max-width: 876px;
+  margin: 0 auto;
+}
+
+.aboveline {
+  border-bottom: 1px solid black;
+  padding-bottom: 75px;
+}
+
+nav a {
+  border-color: grey;
+  width: 100px;
+  height: 100px;
+  margin: 12px 48px 80px 0;
+  align-content: center;
+  text-decoration: none;
+  color: grey;
+}
+
+nav a:hover {
+  color: #2f4f4f;
+}
+
+nav img.logo {
+  padding-top: 10px;
+}
+
+.iod {
+  font-family: "Bangers", cursive;
+  font-size: 60pt;
+  text-align: center;
+  padding: 30px 70px;
+}
+
+.innobutton {
+  width: 49%;
+  display: inline-block;
+}
+
+.button {
+  margin: 8px 24px;
+  font-size: 12pt;
+  text-align: center;
+  border: 1px solid #000;
+  width: 175px;
+  margin: 0 auto;
+  padding: 7px 12px;
+}
+
+.button a {
+  text-decoration: none;
+  color: grey;
+}
+
+.button a:hover {
+  color: #2f4f4f;
+}
+
+.codeimg {
+  width: 49%;
+  display: inline-block;
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 64px;
+  text-align: center;
+  width: 25%;
+  float: left;
+  margin-top: 128px;
+}
+
+.middleimg {
+  margin: 0 auto;
+}
+
+#features,
+#about {
+  width: 49%;
+  display: inline-block;
+}
+
+#services,
+#product,
+#vision {
+  width: 33%;
+  display: inline-block;
+}
+
+.featabout {
+  padding: 40px 0;
+  margin-bottom: 24px;
+}
+
+.serprovi {
+  padding-top: 40px;
+  border-bottom: 1px solid black;
+  padding-bottom: 40px;
+  margin-bottom: 32px;
+}
