@@ -148,9 +148,8 @@ h5 {
 
 /* Your code starts here! */
 
-#wrapper {
-  max-width: 876px;
-  margin: 0 auto;
+body {
+  margin: 0 10%;
 }
 
 .aboveline {
@@ -158,12 +157,24 @@ h5 {
   padding-bottom: 75px;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  margin: 0 10%;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
 nav a {
   border-color: grey;
-  width: 100px;
-  height: 100px;
-  margin: 12px 48px 80px 0;
-  align-content: center;
+  width: 50%;
+  height: 10%;
+
   text-decoration: none;
   color: grey;
 }
@@ -182,10 +193,15 @@ nav img.logo {
   text-align: center;
   padding: 30px 70px;
 }
-
+.aboveline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
 .innobutton {
   width: 49%;
-  display: inline-block;
+  justify-content: center;
 }
 
 .button {
@@ -208,21 +224,19 @@ nav img.logo {
 }
 
 .codeimg {
-  width: 49%;
+  width: 40%;
   display: inline-block;
-  margin-top: 80px;
 }
 
 h1 {
   font-size: 64px;
   text-align: center;
-  width: 25%;
-  float: left;
-  margin-top: 128px;
 }
 
 .middleimg {
+  display: flex;
   margin: 0 auto;
+  justify-content: center;
 }
 
 #features,
@@ -248,4 +262,38 @@ h1 {
   border-bottom: 1px solid black;
   padding-bottom: 40px;
   margin-bottom: 32px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+/*tablet view */
+
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header img {
+    margin: 3%;
+  }
+
+  .codeimg img {
+    display: none;
+  }
+
+  .aboveline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .iod h1 {
+    text-align: center;
+  }
 }
