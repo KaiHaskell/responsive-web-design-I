@@ -152,11 +152,6 @@ body {
   margin: 0 10%;
 }
 
-.aboveline {
-  border-bottom: 1px solid black;
-  padding-bottom: 75px;
-}
-
 header {
   display: flex;
   justify-content: space-around;
@@ -168,6 +163,10 @@ nav {
   margin: 0 10%;
   justify-content: space-evenly;
   width: 70%;
+}
+
+hr {
+  display: none;
 }
 
 nav a {
@@ -191,13 +190,14 @@ nav img.logo {
   font-family: "Bangers", cursive;
   font-size: 60pt;
   text-align: center;
-  padding: 30px 70px;
 }
 .aboveline {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 5%;
+  border-bottom: 1px solid black;
+  padding-bottom: 5%;
 }
 .innobutton {
   width: 49%;
@@ -239,6 +239,10 @@ h1 {
   justify-content: center;
 }
 
+.middleimg img {
+  max-width: 100%;
+}
+
 #features,
 #about {
   width: 49%;
@@ -253,7 +257,7 @@ h1 {
 }
 
 .featabout {
-  padding: 40px 0;
+  padding: 5% 0;
   margin-bottom: 24px;
 }
 
@@ -272,6 +276,10 @@ footer div {
 /*tablet view */
 
 @media (max-width: 800px) {
+  body {
+    margin: 3%;
+  }
+
   header {
     display: flex;
     flex-direction: column-reverse;
@@ -296,4 +304,12 @@ footer div {
   .iod h1 {
     text-align: center;
   }
+  .middleimg {
+    padding: 0 3%;
+  }
+}
+
+/*mobile media query */
+
+@media (max-width: 500px) {
 }
