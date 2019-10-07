@@ -173,7 +173,6 @@ nav a {
   border-color: grey;
   width: 50%;
   height: 10%;
-
   text-decoration: none;
   color: grey;
 }
@@ -191,6 +190,7 @@ nav img.logo {
   font-size: 60pt;
   text-align: center;
 }
+
 .aboveline {
   display: flex;
   align-items: center;
@@ -258,7 +258,6 @@ h1 {
 
 .featabout {
   padding: 5% 0;
-  margin-bottom: 24px;
 }
 
 .serprovi {
@@ -306,10 +305,60 @@ footer div {
   }
   .middleimg {
     padding: 0 3%;
+    margin-top: 3%;
   }
 }
 
 /*mobile media query */
 
 @media (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+
+  header {
+    flex-direction: column-reverse;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  hr {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid grey;
+  }
+  #infodiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .middleimg {
+    margin: 3%;
+  }
+  .serprovi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #features,
+  #about,
+  #product,
+  #vision,
+  #services {
+    width: 80%;
+    margin: 2%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6%;
+  }
+  footer div {
+    margin: 5%;
+  }
 }
